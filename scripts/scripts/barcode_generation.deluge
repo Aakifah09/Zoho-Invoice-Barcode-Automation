@@ -1,0 +1,8 @@
+mpn_value = input.MPN;
+
+barcode_url =
+"https://bwipjs-api.metafloor.com/?bcid=code128&text=" 
++ mpn_value +
+"&scale=3&includetext";
+
+input.Barcode_Image = barcode_url;
