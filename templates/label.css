@@ -1,0 +1,31 @@
+/* Print-specific styles */
+@media print {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .sticker {
+        page-break-inside: avoid;
+        page-break-after: auto;
+    }
+    
+    /* Remove backgrounds for thermal printer */
+    * {
+        background: white !important;
+        color: black !important;
+    }
+    
+    /* Prevent text anti-aliasing blurring */
+    text {
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+/* Text overflow prevention */
+.attribute {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 18mm;
+}
