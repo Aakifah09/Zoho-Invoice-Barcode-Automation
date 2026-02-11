@@ -1,0 +1,16 @@
+invoice_number = input.Invoice_Number;
+
+response = invokeurl
+[
+    url :"https://www.zohoapis.com/books/v3/invoices?invoice_number=" + invoice_number
+    type :GET
+    connection:"zoho_books_connection"
+];
+
+invoice_list = response.get("invoices");
+
+if(invoice_list.size() > 0)
+{
+    invoice_id = invoice_list.get(0).get("invoice_id");
+    info "Invoice ID fetched: " + invoice_id;
+}
