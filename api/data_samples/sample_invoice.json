@@ -1,0 +1,13 @@
+{
+  "invoice_number": "INV-2031",
+  "customer_name": "ABC Fashion",
+  "items": [
+    {
+      "style": "Shirt",
+      "size": "M",
+      "mpn": "MPN102",
+      "mrp": 1200,
+      "quantity": 2
+    }
+  ]
+}
