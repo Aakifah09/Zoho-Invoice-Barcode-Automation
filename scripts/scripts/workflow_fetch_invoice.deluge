@@ -1,0 +1,4 @@
+if(input.Invoice_Number != null)
+{
+    fetch_invoice_details();
+}
