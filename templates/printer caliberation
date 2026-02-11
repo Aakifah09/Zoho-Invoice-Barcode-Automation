@@ -1,0 +1,86 @@
+TSC TTP-244 Pro Calibration
+Critical: Gap Detection and Calibration
+The printer uses gap detection technology to identify label spacing. Proper calibration ensures correct label feeding and prevents misalignment.
+Hardware Calibration Method (Recommended)
+Step 1: Access Calibration Mode
+1. Power OFF the printer completely
+2. Locate the FEED button on the printer control panel
+3. While holding FEED button, press the POWER button
+4. Keep holding FEED until you see LED indicators change (3-5 seconds)
+5. Release both buttons
+6. Printer enters gap detection mode
+
+
+Step 2: Load Label Stock
+
+1. Open the media cover
+2. Insert 50mm × 25mm label roll
+3. Align labels with the thermal head
+4. Close the media cover
+5. Ensure labels feed smoothly without resistance
+
+
+Step 3: Execute Gap Detection
+
+1. Printer will automatically feed labels
+2. Detects gaps between label rows
+3. Process completes when LED stops flashing (10-15 seconds)
+4. Printer returns to normal mode
+
+
+Print Preferences Configuration (Windows)
+Access Print Preferences:
+1. Go to Settings > Devices > Printers & Scanners
+2. Right-click "TSC TTP-244 Pro"
+3. Select "Printing Preferences"
+4. OR: In any application, Print dialog > Preferences
+Configure Label Dimensions:
+SettingValueMedia TypeLabel (Continuous or Gap)Paper Width50mmPaper Height25mmGap Height2-3mm (auto-detected)OrientationPortrait (default)Darkness12-15 (medium setting)Print Speed100mm/s (default)
+Critical Gap Settings:
+Gap Height: 2-3mm
+- Most thermal printers use 2-3mm gaps between labels
+- Gap detection automatically finds this value
+- If manual entry required: Start with 2mm, adjust up if labels misalign
+
+Feed Adjustment: 0mm (standard)
+- Use if labels are misfeeding
+- Increase incrementally (+0.2mm) if gaps appear
+- Decrease if labels overlap
+Calibration Troubleshooting
+
+
+Issue: Printer Won't Enter Calibration Mode
+
+Solution:
+1. Ensure printer is completely powered off
+2. Wait 5 seconds before attempting again
+3. Try with different USB cable/port
+4. Check if drivers are properly installed
+5. Restart computer and retry
+
+
+Issue: Gap Detection Fails
+
+Solution:
+1. Ensure label roll is properly aligned
+2. Check for dust or debris on sensor
+3. Clean the media sensor with dry cloth (gently)
+4. Try with fresh label roll
+5. If persistent: Contact TSC support
+
+
+Issue: Labels Feed Inconsistently
+
+Solution:
+1. Re-run gap detection calibration
+2. Adjust gap height: Try 2.5mm if using 3mm
+3. Verify label stock matches specifications
+4. Check for wrinkled or damaged labels
+5. Ensure roller is clean and not sticky
+
+
+
+Total Width: 50mm = ~189 pixels (at 203 DPI)
+Total Height: 25mm = ~95 pixels (at 203 DPI)
+Usable Area: 48mm × 23mm (accounting for 1mm margins)
+Text Baseline: ~3mm from top and bottom
