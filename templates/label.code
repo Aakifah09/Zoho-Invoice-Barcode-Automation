@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>50x25mm Sticker Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            width: 50mm;
+            height: 25mm;
+            font-family: "Arial", sans-serif;
+        }
+        
+        .sticker {
+            width: 50mm;
+            height: 25mm;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            padding: 2mm;
+        }
+        
+        .left-section {
+            flex: 0.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-right: 2mm;
+            border-right: 1px dotted gray;
+        }
+        
+        .right-section {
+            flex: 0.4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 2mm;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticker">
+        <div class="left-section">
+            <!-- Product Information -->
+        </div>
+        <div class="right-section">
+            <!-- Barcode -->
+        </div>
+    </div>
+</body>
+</html>
