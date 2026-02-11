@@ -1,0 +1,18 @@
+invoice_response = invokeurl
+[
+    url :"https://www.zohoapis.com/books/v3/invoices/" + invoice_id
+    type :GET
+    connection:"zoho_books_connection"
+];
+
+items = invoice_response.get("invoice").get("line_items");
+
+for each item in items
+{
+    row = Zoho_Invoice_Subform();
+    row.Style = item.get("name");
+    row.Quantity = item.get("quantity");
+    row.MRP = item.get("rate");
+
+    input.Items.insert(row);
+}
